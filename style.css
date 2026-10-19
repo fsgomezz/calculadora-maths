@@ -3,7 +3,7 @@
 /* ========================================= */
 :root {
     --color-primary: #004481; /* Azul corporativo */
-    --color-accent: #ffbb00; /* Amarillo/Naranja de énfasis */
+    --color-accent: #76b2af; /* Amarillo/Naranja de énfasis */
     --color-dark: #263238;
     --color-success: #28a745; /* Verde claro para "good" */
     --color-warning: #fd7e14; /* Naranja para "warning" */
@@ -85,10 +85,10 @@ body {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 .btn-calculate:hover {
-    background-color: #ffd24d; /* Un tono un poco más claro al hacer hover */
+    background-color: #76b2af; /* Un tono un poco más claro al hacer hover */
     color: var(--color-primary);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 187, 0, 0.4);
+    box-shadow: 0 5px 15px rgba(91, 166, 189, 0.869);
 }
 
 
@@ -121,4 +121,50 @@ body {
     .display-4 {
         font-size: 2rem; /* Texto más pequeño en móvil */
     }
+}
+
+#main-footer {
+  background: var(--color-primary);
+  color:white;
+  text-align:center;
+  padding: 10px;
+  margin-top:auto;
+}
+
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none; /*  quita el subrayado si no te gusta */
+    /* font-weight: bold; /* Opcional: lo hace un poco más gordito para leerse mejor */
+}
+
+
+#autor{
+  margin: 0.2rem;
+  color:white;
+  text-decoration: none;
+}
+
+
+
+
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  color: var(--color-primary);
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
